@@ -1,2 +1,2 @@
-include ':app'
+include ':app',"JetpackMvvm"
 rootProject.name = "jetpack_mvvm"
