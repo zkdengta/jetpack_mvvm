@@ -1,6 +1,8 @@
 package com.zk.jetpack_mvvm
 
+import android.content.Context
 import me.hgj.jetpackmvvm.BaseApp
+import kotlin.properties.Delegates
 
 /**
 @author: 10154
@@ -8,5 +10,9 @@ import me.hgj.jetpackmvvm.BaseApp
 @description:
  */
 class App : BaseApp(){
+
+    companion object {
+        var CONTEXT: Context by Delegates.notNull()
+    }
 
 }

@@ -6,7 +6,11 @@ package com.zk.jetpack_mvvm.viewmodel
  * 比如 全局可使用的 地理位置信息，账户信息，事件通知等，
  */
 import me.hgj.jetpackmvvm.BaseViewModel
+import me.hgj.jetpackmvvm.callback.UnPeekLiveData
 
 class AppViewModel : BaseViewModel() {
+
+    //App主题颜色 大型项目不推荐以这种方式改变主题颜色，比较繁琐，且容易有遗漏某些地方没有设置主题
+    var appColor = UnPeekLiveData<Int>()
 
 }
